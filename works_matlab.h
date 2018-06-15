@@ -9,7 +9,7 @@
 #include<vector>
 
 using namespace std;
-double getmin(double *arr,int count)
+double getmin(double *arr,int count)//数组中的最小值
 {
 	double temp=arr[0];
 	for(int i=1;i<count;i++){
@@ -20,7 +20,7 @@ double getmin(double *arr,int count)
 	return temp;	
 }
 
-double getmax(double *arr,int count)
+double getmax(double *arr,int count)//数组中的最小值
 {
 	double temp=arr[0];
 	for(int i=1;i<count;i++){
@@ -31,7 +31,7 @@ double getmax(double *arr,int count)
 	return temp;
 }
 
-double sum(double *arr,int onset,int offset)
+double sum(double *arr,int onset,int offset)//数组的求和，指定起始位置
 {
 	double temp;
 	for(int i=onset;i<=offset;i++){
@@ -40,7 +40,7 @@ double sum(double *arr,int onset,int offset)
 	return temp;
 }
 
-//Rounding to retain N decimal places
+//Rounding to retain N decimal places 保留小数点后几位数字
 double round(double number, unsigned int bits) {
     double integerPart = floor(number);
     number -= integerPart;
@@ -65,7 +65,7 @@ double *linspace(double onset,double offset,int num){
 	delete []temp;
 }
 
-int *randperm(int Num)
+int *randperm(int Num)//产生1到Num的Num个数字的随机排序
 {
 	int *temp1 = new int[Num];
     vector<int> temp;
